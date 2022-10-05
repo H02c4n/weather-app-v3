@@ -88,3 +88,10 @@ map.addEventListener("mouseover", (e) => {
     fetchCountryWeather(e.target.ariaLabel);
   }
 });
+
+map.addEventListener("touchstart", (e) => {
+  if (e.target.role == "menuitem") {
+    e.target.setAttribute("fill", "red");
+    fetchCountryWeather(e.target.ariaLabel);
+  }
+});
