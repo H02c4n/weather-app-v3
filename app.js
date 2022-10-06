@@ -82,7 +82,7 @@ const map = document.querySelector("#map");
 
 console.log(map);
 
-map.addEventListener("mouseover", (e) => {
+map.addEventListener("click", (e) => {
   if (e.target.role == "menuitem") {
     e.target.setAttribute("fill", "red");
     fetchCountryWeather(e.target.ariaLabel);
